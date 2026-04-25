@@ -1,0 +1,28 @@
+### Register
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Zaid",
+  "lastName": "Doe",
+  "email": "zaid3@example.com",
+  "password": "password123"
+}
+
+### Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "zaid3@example.com",
+  "password": "password123"
+}
+
+### Get Me — cookie sent automatically by REST client
+GET http://localhost:3000/api/auth/me
+
+### Refresh
+POST http://localhost:3000/api/auth/refresh
+
+### Logout
+POST http://localhost:3000/api/auth/logout
